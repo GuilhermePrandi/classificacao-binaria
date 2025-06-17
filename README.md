@@ -1,43 +1,44 @@
-# 🫀 Classificação Binária: Doença Cardíaca Isquêmica (IHD)
+# 🫀 Binary Classification: Ischemic Heart Disease (IHD)
 
-Este projeto implementa dois modelos de aprendizado de máquina, **Naive Bayes** e **MLP**, para realizar **classificação binária** da presença ou ausência de **Doença Cardíaca Isquêmica (IHD)** com base em variáveis clínicas e de estilo de vida.
+This project implements two machine learning models, **Naive Bayes** and **MLP** to perform **binary classification** of the presence or absence of **Ischemic Heart Disease (IHD)** based on clinical and lifestyle variables.
 
 ---
 
-## Dataset
+## 📂 Dataset
 
-- **Fonte:** [Kaggle - Quantum Enhanced Ischemic Heart Disease Dataset](https://www.kaggle.com/datasets/ziya07/quantum-enhanced-ischemic-heart-disease-dataset)
-- **Alvo:** `IHD` → 0 (ausência) ou 1 (presença) de isquemia cardíaca
-- **Atributos utilizados:**
-  - Idade
-  - Gênero
-  - Pressão Sistólica
-  - Colesterol
-  - IMC
-  - Tabagismo
-  - Atividade Física
+- **Source:** [Kaggle - Quantum Enhanced Ischemic Heart Disease Dataset](https://www.kaggle.com/datasets/ziya07/quantum-enhanced-ischemic-heart-disease-dataset)
+- **Target:** `IHD` → 0 (absence) or 1 (presence) of ischemic heart disease
+- **Features used:**
+  - Age
+  - Gender
+  - Systolic Blood Pressure
+  - Cholesterol
+  - BMI
+  - Smoking Status
+  - Physical Activity
   - Diabetes
-  - Hipertensão
+  - Hypertension
 
 ---
 
-## Modelos Utilizados
+## 🧠 Models Used
 
-### Naive Bayes
-- Algoritmo probabilístico (GaussianNB)
-- Assumindo independência entre as variáveis
+### ✅ Naive Bayes
+- Probabilistic algorithm (`GaussianNB`)
+- Assumes independence between features
 
-### MLP (Multi-Layer Perceptron)
-- Arquitetura:
-  - 2 camadas ocultas: 16 e 8 neurônios
-  - Função de ativação: ReLU
-  - Otimizador: Adam
-  - Iterações: até 10.000 épocas
+### ✅ MLP (Multi-Layer Perceptron)
+- Architecture:
+  - 2 hidden layers: 16 and 8 neurons
+  - Activation function: ReLU
+  - Optimizer: Adam
+  - Max iterations: 10,000
 
 ---
 
-## Como executar
+## 🚀 How to Run
 
-git clone https://github.com/seu-usuario/classificacao-binaria.git
-cd classificacao-binaria
+```bash
+git clone https://github.com/your-username/binary-classification-ihd.git
+cd binary-classification-ihd
 python classificacao_ihd.py
